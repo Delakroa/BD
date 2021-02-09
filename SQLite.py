@@ -22,6 +22,6 @@ with con:
     con.executemany(sql, data)
 
 with con:
-    data = con.execute("SELECT * FROM USER WHERE age <=34")
+    data = con.execute("SELECT * FROM USER WHERE age <=37")
     for row in data:
         print(row)
